@@ -18,10 +18,10 @@ export class Excel {
             // $el.classList.add(Component.className)
             const component = new Component($el)
             // $el.innerHTML = component.toHTML()
-            // DEBUG
-            if (component.name) {
-                window['c_' + component.name] = component
-            }
+            // // DEBUG
+            // if (component.name) {
+            //     window['c_' + component.name] = component
+            // }
             $el.html(component.toHTML())
             // $root.insertAdjacentHTML('beforeend', component.toHTML())
             $root.append($el)
